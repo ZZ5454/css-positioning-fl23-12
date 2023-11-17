@@ -106,12 +106,20 @@ footer {
     padding: 10px;
     min-height: 300px; /* Can be removed. Only for demonstration */
   }
+
    /* Clear floats after the columns */
   .my-row:after {
     content: "";
     display: table;
     clear: both;
   }
+
+  @media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+      }
+ }
+ 
 
   .fa {
     padding: 20px;
